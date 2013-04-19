@@ -1,0 +1,13 @@
+Proxy=
+Username=
+Password=
+AlbumListToUpload=
+TitleFromAlbumInfo=True
+SummaryFromAlbumInfo=True
+PublishedFromAlbumInfo=True
+LocationFromAlbumInfo=True
+AccessFromAlbumInfo=True 
+AlbumCoverUpload=False
+SummaryFromFile=True
+CommentsFromFile=True
+GpsFromFile=False
