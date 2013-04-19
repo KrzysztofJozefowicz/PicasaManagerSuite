@@ -16,4 +16,5 @@ Hints:
 - to reuse configuration parameters use config.txt
 - input parameters overwrites those from config.txt
 - check help how to mass upload albums using file with urls or directory path, specified in AlbumListToUpload parameter
+- to only update metadata, remove photos from album directory leaving txt files with meta (separate switch will be include soon) 
 
