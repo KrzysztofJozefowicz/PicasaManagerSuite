@@ -1,11 +1,11 @@
 PicasaManagerSuite
 ==================
-PMS is a set of Python scripts to allow easy management of PicasaWeb account without use of Picasa tool.
+PMS is a set of Python scripts to allow easy management of PicasaWeb photos without use of dedicated Picasa software.
 
 Main features:
 - download/upload selected set of albums
 - downloading full resolution photos
-- possibility to export metadata such as summary,comments and gps coordinates of photos and albums
+- possibility to export to file metadata such as summary,comments and gps coordinates of photos and albums
 - possibility to configure what types of meta will be downloaded or uploaded/updated
 
 
