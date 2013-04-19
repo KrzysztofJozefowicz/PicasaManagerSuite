@@ -1,5 +1,7 @@
 PicasaUpload is a set of scripts to allow massive album uploads to Picasa webservice.
-Apart from plain upload, it can automaticly set album properties and info, set photos summary and restore comments. Additional information (album properties,photo meta data) are fetched from EXIF or separate text files (types and content same as in albums download by PicasaDownload)
+Apart from plain upload, it can automaticly set album properties and info, set photos summary and restore comments. 
+Additional information (album properties,photo meta data) are fetched from EXIF or 
+separate text files (types and content same as in albums download by PicasaDownload)
 
 Limitations:
 - video uploading is not supported (Python GoogleAPI does not support it)
