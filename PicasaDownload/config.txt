@@ -1,0 +1,17 @@
+#Proxy=
+Username=
+Password=
+SavePhoto=True
+SaveTitleToExif=True
+SaveTitleToFile=False
+SaveGPSToExif=True
+SaveGPSToFile=True
+SaveCommentsToFile=True
+SaveAlbumInfoToFile=True
+SaveAlbumThumbToFile=True
+PicasaAlbumsVisability=all
+WorkingDirectory=
+PicasaUser=
+PicasaAlbumsUrlFile=
+AlbumUrl=
+ConvertToAscii=False
