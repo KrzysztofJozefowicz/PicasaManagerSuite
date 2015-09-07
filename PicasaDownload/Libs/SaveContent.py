@@ -13,6 +13,14 @@ def SavePhoto(photo, dir_name, Flags):
     if Flags['SavePhoto'] == True:
         if Flags['ConvertToAscii'] == True or Flags['ConvertToAscii'] == 'Names':
             photo.title.text = Utils.ConvertToAscii(photo.title.text)
+        '''
+        adding s0 before filename token will provide download of orginal size photo
+        '''
+        tmp= photo.content.src.split('/')
+        tmp[-1]='s0/'+tmp[-1]
+        link=''
+        link=reduce ( (lambda x,y: x+"/"+y),tmp)
+        
         SaveToFile.SaveFile(photo.content.src, dir_name + photo. title.text)  # saves photo/movie to selected directory
         print photo.title.text + ': file saved'
 
