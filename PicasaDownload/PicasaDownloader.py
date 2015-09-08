@@ -28,6 +28,7 @@ albums = Utils.GetFeed(gd_client.GetUserFeed(user=Flags['PicasaUser']))
 if len(albums.entry) == 0:
     print "There are no albums to download or PicasaUser " + Flags['PicasaUser'] + " is not known."
 
+albumCounter=1
 for AlbumUrl in AlbumList:
 
     for album in albums.entry:
@@ -40,7 +41,10 @@ for AlbumUrl in AlbumList:
 
             dir_name = Utils.CrateAlbumDirectory(Utils.RemoveForbiddenCharsFromName(album.title.text), Flags)
 
+            print "#####"
             print "Processing: " + album.title.text
+            print "Album "+str(albumCounter)+" / "+str(len(AlbumList))
+            print "#####"
 
             SaveToFile.SaveAlbumInfoToFile(album,  dir_name, Flags)
             SaveToFile.SaveAlbumThumbToFile(album, dir_name, Flags)
