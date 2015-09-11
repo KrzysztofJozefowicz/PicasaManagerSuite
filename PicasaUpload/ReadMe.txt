@@ -1,3 +1,5 @@
+Until I fix oauth2, upload does not work :(
+
 PicasaUpload is a set of scripts to allow massive album uploads to Picasa webservice.
 Apart from plain upload, it can automaticly set album properties and info, set photos summary and restore comments. 
 Additional information (album properties,photo meta data) are fetched from EXIF or 
