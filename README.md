@@ -16,12 +16,10 @@ Requirements:
 - Python 2.7
 - Google Python Gdata library
 - Pyexiv2 library for exif support
+- httplib2 for autorisation token refresh
 
 How to:
 - run main scipts to get help info
 - config.txt file can be used for storage of common settings
 
-ToDo:
-- refactoring
-- docs
-- Meta summary urls check
+
