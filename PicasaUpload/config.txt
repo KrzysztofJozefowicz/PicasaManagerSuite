@@ -1,6 +1,5 @@
 Proxy=
-Username=
-Password=
+ClientSecret=
 AlbumListToUpload=
 TitleFromAlbumInfo=True
 SummaryFromAlbumInfo=True
