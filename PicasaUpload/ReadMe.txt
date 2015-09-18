@@ -1,4 +1,4 @@
-Until I fix oauth2, upload does not work :(
+
 
 PicasaUpload is a set of scripts to allow massive album uploads to Picasa webservice.
 Apart from plain upload, it can automaticly set album properties and info, set photos summary and restore comments. 
@@ -9,6 +9,13 @@ Limitations:
 - video uploading is not supported (Python GoogleAPI does not support it)
 - not possible autmaticly set album's cover
 
+Authentication:
+  - Visit Google Developers Console: https://console.developers.google.com 
+  - Create credidential under API -> Credidentials
+  - Download JSON file
+  - Specify JSON file in ClientSecret parameter
+  - upon first attempt, follow on screan instructions.
+  - authentication token is stored in user_credidentials.txt, if you which to connect to different Picasa account, remove this file beforehand 
 
 Script:
 AlbumsUploader.py - main uploader script
@@ -17,6 +24,5 @@ Hints:
 - check -h for possible input parameters
 - to reuse configuration parameters use config.txt
 - input parameters overwrites those from config.txt
-- check help how to mass upload albums using file with urls or directory path, specified in AlbumListToUpload parameter
-- to only update metadata, remove photos from album directory leaving txt files with meta (separate switch will be include soon) 
-
+- you can use text file with paths to multiple albums for mass upload. Specify that file as AlbumListToUpload parameter in config.txt
+- to only update metadata, remove photos from album directory leaving txt files with meta
