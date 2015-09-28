@@ -1,6 +1,6 @@
 '''
-Changed on 18-93-2015
-
+Created on 25-03-2013
+Updated: 28-09-2015
 @author: j00zef.git@gmail.com
 '''
 
@@ -76,10 +76,10 @@ def ArgumentParsing(parser):
 
    
     
-    parser.add_argument("-usr", "--UserSecret"                ,dest="UserSecret"                , help="Path to client_secrets JSON file donwloaded from Google Developers Console: https://console.developers.google.com" )
+    parser.add_argument("-cs", "--ClientSecret"                ,dest="ClientSecret"                , help="Path to client_secrets JSON file donwloaded from Google Developers Console: https://console.developers.google.com" )
     parser.add_argument("-un", "--Username"                ,dest="Username"                , help="Picasa Username" )
     parser.add_argument("-px",  "--Proxy"                   ,dest="Proxy"                   , help="Sets proxy server, format IP:PORT " )
-    parser.add_argument("-in",  "--Input"                   ,dest="AlbumListToUpload"       , help="Album directory,directory with albums or file list with paths to albums to upload " )
+    parser.add_argument("-in",  "--AlbumListToUpload"                   ,dest="AlbumListToUpload"       , help="Album directory,directory with albums or file list with paths to albums to upload " )
     parser.add_argument("-at",  "--TitleFromAlbumInfo"      ,dest="TitleFromAlbumInfo"      , help="Use album title from album-info file instead of directory name. " )
     parser.add_argument("-as",  "--SummaryFromAlbumInfo"    ,dest="SummaryFromAlbumInfo"    , help="Update album summary from album-info file." )
     parser.add_argument("-ap",  "--PublishedFromAlbumInfo"  ,dest="PublishedFromAlbumInfo"  , help="Update album publish date from album-info file or leave it as current date." )
