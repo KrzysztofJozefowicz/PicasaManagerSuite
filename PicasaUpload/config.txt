@@ -1,4 +1,5 @@
 Proxy=
+Username=
 ClientSecret=
 AlbumListToUpload=
 TitleFromAlbumInfo=True
