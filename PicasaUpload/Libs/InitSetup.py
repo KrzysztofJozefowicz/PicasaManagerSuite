@@ -20,7 +20,7 @@ def SetFlags(Settings,Arguments):
        'LocationFromAlbumInfo':True,
        'AccessFromAlbumInfo':True,
        'AlbumCoverUpload':False,
-     
+       'Username':None,
        'SummaryFromFile':True,
        'CommentsFromFile':True,
        'GpsFromFile':True,
@@ -77,6 +77,7 @@ def ArgumentParsing(parser):
    
     
     parser.add_argument("-usr", "--UserSecret"                ,dest="UserSecret"                , help="Path to client_secrets JSON file donwloaded from Google Developers Console: https://console.developers.google.com" )
+    parser.add_argument("-un", "--Username"                ,dest="Username"                , help="Picasa Username" )
     parser.add_argument("-px",  "--Proxy"                   ,dest="Proxy"                   , help="Sets proxy server, format IP:PORT " )
     parser.add_argument("-in",  "--Input"                   ,dest="AlbumListToUpload"       , help="Album directory,directory with albums or file list with paths to albums to upload " )
     parser.add_argument("-at",  "--TitleFromAlbumInfo"      ,dest="TitleFromAlbumInfo"      , help="Use album title from album-info file instead of directory name. " )
